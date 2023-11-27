@@ -117,7 +117,19 @@ main{
     color: var(--info-text-color);
 }
 
-.informaçoes a{
+.informaçoes a,
+.botoes a{
     text-decoration: none;
     color: var(--info-text-color);
+}
+
+.botoes{
+    padding-block: 1rem;
+    background: var(--bg-tarefas);
+    border-radius: 0.3125;
+    margin-top: 1rem;
+    justify-content: center;
+    display: flex;
+    gap: 1.2rem;
+    font-size: 0.875rem;
 }
