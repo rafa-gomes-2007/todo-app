@@ -71,6 +71,12 @@ header div div {
     justify-content: space-between;
 }
 
+header button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 header div h1{
     color: #fff;
     text-transform: uppercase;
