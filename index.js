@@ -20,6 +20,15 @@ const conexao = mysql.createConnection({
     database: "todo-app",
 })
 
-app.listen(3000, () => {    
-    console.log("servidor rodando na porta 3000")
+
+conexao.connect((erro) => {
+    if (erro) {
+        return console.log(erro)
+    }
+
+    console.log("estou conectado ao mySql")
+
+    app.listen(3000, () => {    
+        console.log("servidor rodando na porta 3000")
+    })
 })
