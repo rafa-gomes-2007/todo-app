@@ -22,6 +22,7 @@
     --info-text-color: #9495a5;
     --info-button-hover: #494c6b;
     --info-button-active: #3a7ced;
+    --todo-complete-color: #d1d2da;    
 }
 
 body.dark{
@@ -41,6 +42,7 @@ body.dark{
     --info-text-color: #5b5e7e;
     --info-button-hover: #e3e4f1;
     --info-button-active: #3a7ced;
+    --todo-complete-color: #4d5067;  
 }
 
 body{
@@ -131,6 +133,11 @@ main{
 
 .tarefas .tarefa + .tarefa{
     border-top: 1px solid var(--border-color);
+}
+
+.completa label{
+    text-decoration: line-through;
+    color: var(--todo-complete-color);
 }
 
 .tarefa form{
