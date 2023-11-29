@@ -26,7 +26,7 @@
 }
 
 body.dark{
-    --bg-header-mobile: url(../imagens/bg-header-mobile-dark.png);
+    --bg-header-mobile: url(../imagens/bg-header-mobile-black.png);
     --bg-header-desktop: url(../imagens/bg-header-desktop-dark.png);
     --input-box-shadow:  rgba(0, 0, 0, 0.50);
     --placeholder-color:  #767992;
