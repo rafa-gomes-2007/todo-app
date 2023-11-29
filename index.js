@@ -48,18 +48,18 @@ app.get('/', (requisicao, resposta) => {
 
         
 
-        const tarefas = dados.map((dados) => {
+        const tarefas = dados.map((dado) => {
             return {
-                id: dados.id,
-                descricao: dados.descricao,
-                completa: dados.completa === 0  ? false : true
+                id: dado.id,
+                descricao: dado.descricao,
+                completa: dado.completa === 0  ? false : true
             }
         })
 
-      
+        resposta.render('home', { tarefas })
     })
 
-    resposta.render('home')
+   
 })
 
 const conexao = mysql.createConnection({
